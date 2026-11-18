@@ -7,7 +7,7 @@
       name="description"
       content="The portfolio of Yussif Graniel — a developer building thoughtful digital experiences."
     />
-    <meta name="theme-color" content="#f8f8f5" />
+    <meta id="theme-color-meta" name="theme-color" content="#f8f8f5" />
     <title>Yussif Graniel — Developer &amp; Creative Thinker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,21 +22,27 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="wordmark" href="#home" aria-label="Yussif Graniel home">Yussif Graniel<span>.</span></a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          aria-label="Open navigation"
-        >
-          <span></span>
-          <span></span>
-        </button>
         <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
         </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="theme-toggle-label">Dark theme</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </header>
 
       <main>
